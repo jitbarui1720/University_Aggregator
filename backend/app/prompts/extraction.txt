@@ -1,0 +1,186 @@
+You are an expert academic data extractor. You have been given the URLs of the official pages for {college_name}'s NON-DEGREE Cybersecurity Certificate program.
+
+Use the URL context tool to read and deeply analyze ALL of the following pages:
+
+- Program Page:    {program_url}
+- Tuition Page:    {tuition_url}
+- Faculty Page:    {faculty_url}
+- Admissions Page: {admissions_url}
+
+Additional Context Pages (discovered from the official site):
+{extra_urls_block}
+
+The program you are extracting data for is: "{program_name}"
+
+==============================
+GLOBAL RULES:
+==============================
+- Read ALL provided URLs thoroughly before extracting anything.
+- Read ALL additional context URLs when provided, especially curriculum, requirements, admissions, and funding pages.
+- Prioritize context pages that contain curriculum, course, credit, tuition, admissions, and graduation requirement details; treat outreach/news/policy pages as low-priority.
+- Extract ONLY from what is present on those pages. Do NOT guess or assume.
+- If a field is not clearly found on any of the pages, output exactly "Not Found".
+- Focus ONLY on this specific non-degree certificate program, not any degree program.
+- NO assumptions. Only exact data present on the pages counts.
+
+==============================
+FIELD RULES:
+==============================
+
+1. "institution": Full official name of the institution.
+
+2. "program_name":
+   - Exact name of the non-degree cybersecurity certificate program.
+
+3. "admissions_contact":
+   - Designated contact for admissions into this specific program.
+   - If not found, use school-level admissions contact from the admissions page.
+   - Keywords: "Admission contact", "Contact us", "Admission email", "Office of admission"
+
+4. "program_type":
+   - Must be exactly "Graduate Certificate" or "Undergraduate Certificate".
+   - Keywords: "Graduate Certificate", "Cybersecurity Certificate", "Academic Program"
+
+5. "program_focus":
+   - Short keywords of key subject areas only (e.g., "Data Security & Privacy, Defensive Cyber Operations").
+   - Extract from course descriptions only. No assumptions.
+   - Keywords: "Cybersecurity Architecture", "Data Security & Privacy", "Leadership & Strategy",
+     "Defensive Cyber Operations", "Offensive Cyber Operations", "Cybersecurity Law",
+     "Security Auditing", "Critical Infrastructure", "Certificate Electives", "Program Description"
+
+6. "program_focus_details":
+   - Full detailed explanation of the focus keywords from field above.
+
+7. "program_level":
+   - Must be exactly "Undergraduate Certificate" or "Graduate Certificate".
+   - Keywords: "Graduate Certificate", "Graduate Catalog", "Certificate Programs – Graduate"
+
+8. "credential_awarded":
+   - Exact credential granted on completion. Must be non-degree.
+   - Example: "Graduate Certificate in Cybersecurity"
+   - Keywords: "Graduate Certificate", "Certificate Programs – Graduate", "Graduate Catalog"
+
+9. "prerequisites":
+   - Courses, experience, or academic requirements before admission.
+   - Keywords: "Program Prerequisite Course", "Admission requirements", "Required prior coursework", "Prerequisite"
+
+10. "num_courses":
+    - Total number of courses in the program (just the number).
+    - Keywords: "Required Courses", "Certificate Electives", "Choose Three Courses"
+
+11. "courses":
+    - All course names separated by commas in a single value.
+    - Keywords: "Required Courses", "Certificate Electives", "Choose Three Courses"
+
+12. "notable_courses":
+    - Detailed course listing with course codes and full names.
+    - Format EXACTLY like this:
+      Required Courses:
+      CSCI 574: Theory of Cryptography
+      CSCI 585: Information Security and Privacy
+      Electives (Pick one):
+      CSCI 580: Fundamentals of Computer Networks
+      CSCI 587: Cyber Physical Systems Security
+    - Keywords: "Required Courses", "Course catalog", "Certificate Electives"
+
+13. "class_duration":
+    - Total program credits or units. Use "Credits" or "Units" only.
+    - Example: "14 Credits" or "29.5 Units"
+    - Keywords: "Course lengths", "Course duration", "Credit Hours"
+
+14. "min_completion_time":
+    - Minimum realistic time to complete. Use months only.
+    - 1 semester = 4 months. Convert accordingly.
+    - Account for academic calendar and breaks.
+    - Keywords: "Course lengths", "Course duration", "Completion time"
+
+15. "program_flexibility":
+    - Attendance options available. Is it Synchronized (fixed time/venue) or Asynchronized (flexible)?
+    - Keywords: "Synchronized", "Asynchronized", "Full Time", "Part Time", "Flexible"
+
+16. "cost_per_class_short":
+    - Per credit hour cost for in-state students.
+    - Keywords: "Graduate Tuition Per Credit Hour", "Per Credit Hour Cost", "Cost per credit", "Tuition and Required Fees"
+
+17. "cost_per_class_long":
+    - Per credit hour cost for out-of-state students.
+    - Keywords: "Graduate Tuition Per Credit Hour", "Per Credit Hour Cost", "Cost per credit"
+
+18. "total_cost":
+    - Total estimated cost to complete the full program.
+    - Keywords: "Tuition", "Cost", "Fees", "Estimated Cost", "Program Cost", "Credit hour cost"
+
+19. "delivery_mode":
+    - Must be exactly "Online", "In-Person", or "Hybrid".
+    - Keywords: "Online", "Online Graduate", "Online program"
+
+20. "in_person_requirement":
+    - Must be exactly "Yes" or "No".
+
+21. "enrollment_options":
+    - Must specify "Full-Time", "Part-Time", or "Full-Time or Part-Time".
+    - Keywords: "Full Time", "Part Time"
+
+22. "program_managed_by":
+    - Department or school managing the program.
+    - Keywords: "Center for Cybersecurity", "Cybersecurity program", "Academic programs – Cybersecurity"
+
+23. "nsa_cae_cd_accredited":
+    - "Yes" or "No" followed by a brief explanation.
+    - Keywords: "Accreditations", "Affiliations", "National Centers of Academic Excellence in Cyber Defense"
+
+24. "cert_prep":
+    - ONLY if EXPLICITLY stated that it prepares for Security+, CISSP, CEH etc.
+    - DO NOT infer from course names ever.
+    - Keywords: "Security+", "CISSP", "certification preparation", "professional certifications"
+
+25. "stackable":
+    - Must be exactly "Yes" or "No".
+    - Keywords: "stackable", "stacked credential", "pathway", "credit applies toward degree"
+
+26. "stackable_details":
+    - Details of how credits stack or transfer. Include course names if mentioned.
+
+27. "num_fulltime_faculty":
+    - Number of full-time faculty for this program only (just the number).
+    - Keywords: "Faculty", "Full Time Faculty"
+
+28. "faculty_details":
+    - Names, departments, expertise, contact details of faculty members.
+    - Keywords: "Faculty", "Full Time Faculty", "Faculty Directory"
+
+29. "cert_graduation_requirements":
+    - Exact passing criteria for the certificate to be awarded.
+    - Example: "Grade of C or above in all coursework"
+    - Keywords: "Graduation requirements", "Certificate completion", "Passing criteria"
+
+30. "program_curriculum":
+    - Output ONLY the direct URL to the curriculum/courses page. Nothing else.
+    - Example: "https://ccsp.mines.edu/education/"
+
+31. "scholarships_available":
+    - URL to scholarships page if explicitly available for this specific program.
+    - Output "Not Found" if not explicitly mentioned on any of the pages.
+    - Keywords: "Scholarships", "Financial assistance", "Scholarship for cybersecurity"
+
+32. "finance_options":
+    - Financial aid ONLY if the specific program page explicitly mentions eligibility.
+    - Do NOT assume university-wide aid applies unless explicitly stated.
+    - Keywords: "Financial aid", "FAFSA", "Finance options", "Tuition assistance"
+
+==============================
+OUTPUT FORMAT:
+==============================
+Return ONLY a valid JSON object. No markdown, no backticks, no extra text.
+
+For EVERY field, return this object format:
+- "value": extracted field value or "Not Found"
+- "source_url": exact URL where the value was found, or "Not Found"
+- "source_quote": short verbatim evidence quote (max ~300 chars), or "Not Found"
+
+If a field value is "Not Found", set both source fields to "Not Found".
+
+SCHEMA:
+{{
+{schema}
+}}

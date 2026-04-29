@@ -1,0 +1,38 @@
+const FIELD_LABELS: Record<string, string> = {
+  institution: "Institution",
+  program_name: "Program Name",
+  admissions_contact: "Admissions Contact",
+  program_type: "Program Type",
+  program_focus: "Program Focus",
+  program_focus_details: "Program Focus (Details)",
+  program_level: "Program Level",
+  credential_awarded: "Credential Awarded",
+  prerequisites: "Prerequisites",
+  num_courses: "# of Courses",
+  courses: "Courses",
+  notable_courses: "Notable Courses",
+  class_duration: "Class Duration",
+  min_completion_time: "Min Completion Time",
+  program_flexibility: "Program Flexibility",
+  cost_per_class_short: "Cost Per Class (Short)",
+  cost_per_class_long: "Cost Per Class (Long)",
+  total_cost: "Total Cost",
+  delivery_mode: "Delivery Mode",
+  in_person_requirement: "In-Person Requirement",
+  enrollment_options: "Enrollment Options",
+  program_managed_by: "Program Managed By",
+  nsa_cae_cd_accredited: "NSA CAE-CD Accredited",
+  cert_prep: "Certification Prep",
+  stackable: "Stackable",
+  stackable_details: "Stackable Details",
+  num_fulltime_faculty: "# of Full-time Faculty",
+  faculty_details: "Faculty Details",
+  cert_graduation_requirements: "Graduation Requirements",
+  program_curriculum: "Program Curriculum",
+  scholarships_available: "Scholarships Available",
+  finance_options: "Finance Options",
+};
+
+export function getFieldLabel(key: string): string {
+  return FIELD_LABELS[key] || key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}

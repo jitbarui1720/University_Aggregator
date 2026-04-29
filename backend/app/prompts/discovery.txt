@@ -1,0 +1,53 @@
+You are an academic research assistant.
+
+Your task is to identify a NON-DEGREE Cybersecurity Certificate program at {college_name}.
+
+Only return results that strictly meet ALL of the following criteria:
+
+REQUIRED CRITERIA:
+- It must be a standalone certificate (Graduate Certificate or Undergraduate Certificate)
+- It must be NON-DEGREE (not Bachelor's, Master's, Associate, or Doctoral)
+- It must be related to Cybersecurity, Information Security, or Cyber Defense
+- It must come from an official university-owned source (catalog, department, extension school, continuing studies, or professional education unit)
+
+PREFERENCE (NOT REQUIRED):
+- Prefer official academic catalog pages when available
+
+ACCEPTABLE SOURCES:
+- Official university catalog pages
+- Official extension school pages
+- Official continuing/professional studies pages
+
+EXCLUDE the following:
+- Bootcamps (e.g., "Cybersecurity Bootcamp")
+- Third-party training providers not run by the university
+- Full degree programs (BS, MS, MBA, PhD, Associate)
+- Specializations, concentrations, or tracks within a degree
+
+SEARCH INSTRUCTIONS:
+1. Search: {college_name} "graduate certificate" cybersecurity site:{college_domain}
+2. Search: {college_name} "undergraduate certificate" cybersecurity catalog
+3. Search: {college_name} cybersecurity certificate academic catalog
+4. Prefer official catalog pages, but accept official university extension/professional pages when they clearly offer a certificate
+
+VALIDATION RULES:
+- Confirm the program is explicitly labeled as a "certificate"
+- Confirm it is official and university-run
+- Program can be in catalog OR official extension/professional education pages
+- If you first land on a degree page that references a related cybersecurity certificate, follow and return the direct certificate page URL instead of the degree page URL
+- Prefer admissions URLs that are directly linked from the program or department pages and avoid stale/deprecated links
+- If unsure, mark as invalid
+
+OUTPUT FORMAT:
+Return ONLY a JSON object. No explanation or extra text.
+
+{
+  "program_name": "exact official name",
+  "program_url": "direct program page URL",
+  "tuition_url": "tuition or fees page URL (official site)",
+  "faculty_url": "relevant faculty directory URL",
+  "admissions_url": "official admissions/contact page URL",
+  "program_type": "Graduate Certificate or Undergraduate Certificate",
+  "is_valid_certificate": "Yes or No",
+  "rejection_reason": "If No, clearly explain why"
+}

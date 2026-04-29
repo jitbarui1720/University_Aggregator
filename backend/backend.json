@@ -1,0 +1,241 @@
+
+{
+    "run_id": "ef948bf7-f0d6-46f1-8afe-13b6b073934f",
+    "college_name": "Trident Technical College",
+    "status": "completed",
+    "created_at": "2026-04-04T09:11:14.542407+00:00",
+    "updated_at": "2026-04-04T09:11:14.542407+00:00",
+    "finished_at": "2026-04-04T09:15:22.961432+00:00",
+    "result": {
+      "status": "completed",
+      "college_name": "Trident Technical College",
+      "slug": "trident_technical_college",
+      "validation": {
+        "is_valid": true,
+        "reason": "OK"
+      },
+      "discovery": {
+        "program_name": "Cybersecurity Certificate (CAS.CYBE)",
+        "program_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+        "tuition_url": "https://www.tridenttech.edu/cost/tuition.html",
+        "faculty_url": "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/faculty.html",
+        "admissions_url": "https://www.tridenttech.edu/admissions/apply/index.html",
+        "program_type": "Undergraduate Certificate",
+        "is_valid_certificate": "Yes",
+        "rejection_reason": null,
+        "context_urls": [
+          "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=399",
+          "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/ttc_security_policies.html",
+          "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/programs_of_study.html",
+          "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/index.html",
+          "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/cybersecurity_clinic.html",
+          "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/contact_us.html",
+          "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/advisory_committee.html",
+          "https://catalog.tridenttech.edu/content.php?catoid=6&navoid=399"
+        ],
+        "validation_status": "Valid",
+        "validation_reason": "OK"
+      },
+      "fields": {
+        "institution": {
+          "value": "Trident Technical College",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Program: Cybersecurity Certificate (CAS.CYBE) - Trident Technical College"
+        },
+        "program_name": {
+          "value": "Cybersecurity Certificate (CAS.CYBE)",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Cybersecurity Certificate (CAS.CYBE)"
+        },
+        "admissions_contact": {
+          "value": "Info: 843-574-6111",
+          "source_url": "https://www.tridenttech.edu/admissions/apply/index.html",
+          "source_quote": "Info: 843-574-6111"
+        },
+        "program_type": {
+          "value": "Undergraduate Certificate",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Certificate in Applied Science"
+        },
+        "program_focus": {
+          "value": "Information Assurance, Cybersecurity, Systems Security, Infrastructure Security, Digital Forensics, Network Security",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "It is designed to provide expertise in information assurance and cybersecurity to prepare you for employment in the fast-growing field of cybersecurity...Students will gain the knowledge and skills to develop and implement systems and infrastructure security in business and industry."
+        },
+        "program_focus_details": {
+          "value": "This certificate program is designed for individuals with experience or training in systems and network operations. It is designed to provide expertise in information assurance and cybersecurity to prepare you for employment in the fast-growing field of cybersecurity. This program is ideal if you are employed or are pursuing employment in a business that includes a cybersecurity workforce as part of the organization. Students will gain the knowledge and skills to develop and implement systems and infrastructure security in business and industry.",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "This certificate program is designed for individuals with experience or training in systems and network operations. It is designed to provide expertise in information assurance and cybersecurity to prepare you for employment in the fast-growing field of cybersecurity. This program is ideal if you are employed or are pursuing employment in a business that includes a cybersecurity workforce as part of the organization. Students will gain the knowledge and skills to develop and implement systems and infrastructure security in business and industry."
+        },
+        "program_level": {
+          "value": "Undergraduate Certificate",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Certificate in Applied Science"
+        },
+        "credential_awarded": {
+          "value": "Certificate in Applied Science",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Certificate in Applied Science"
+        },
+        "prerequisites": {
+          "value": "Admission into this program requires proof of high school graduation (or GED) and qualifying scores on SAT, ACT or the TTC placement test.",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Admission into this program requires proof of high school graduation (or GED) and qualifying scores on SAT, ACT or the TTC placement test."
+        },
+        "num_courses": {
+          "value": "10",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Major Requirements\n\nCPT 282 - Information Systems Security Credit: 3\nCYB 269 - Digital Forensics Credit: 3\nCYB 285 - Cybersecurity Capstone Credit: 3\nIST 165 - Implementing and Administering Windows Directory Services Credit: 3\nIST 166 - Network Fundamentals Credit: 3\nIST 190 - Linux Essentials Credit: 3\nIST 191 - Linux System Administration Credit: 3\nIST 291 - Fundamentals of Network Security I Credit: 3\nIST 293 - IT and Data Assurance I Credit: 3\nIST 294 - IT and Data Assurance II Credit: 3"
+        },
+        "courses": {
+          "value": "CPT 282 - Information Systems Security, CYB 269 - Digital Forensics, CYB 285 - Cybersecurity Capstone, IST 165 - Implementing and Administering Windows Directory Services, IST 166 - Network Fundamentals, IST 190 - Linux Essentials, IST 191 - Linux System Administration, IST 291 - Fundamentals of Network Security I, IST 293 - IT and Data Assurance I, IST 294 - IT and Data Assurance II",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Major Requirements\n\nCPT 282 - Information Systems Security Credit: 3\nCYB 269 - Digital Forensics Credit: 3\nCYB 285 - Cybersecurity Capstone Credit: 3\nIST 165 - Implementing and Administering Windows Directory Services Credit: 3\nIST 166 - Network Fundamentals Credit: 3\nIST 190 - Linux Essentials Credit: 3\nIST 191 - Linux System Administration Credit: 3\nIST 291 - Fundamentals of Network Security I Credit: 3\nIST 293 - IT and Data Assurance I Credit: 3\nIST 294 - IT and Data Assurance II Credit: 3"
+        },
+        "notable_courses": {
+          "value": "Required Courses:\nCPT 282 - Information Systems Security\nCYB 269 - Digital Forensics\nCYB 285 - Cybersecurity Capstone\nIST 165 - Implementing and Administering Windows Directory Services\nIST 166 - Network Fundamentals\nIST 190 - Linux Essentials\nIST 191 - Linux System Administration\nIST 291 - Fundamentals of Network Security I\nIST 293 - IT and Data Assurance I\nIST 294 - IT and Data Assurance II",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Major Requirements\n\nCPT 282 - Information Systems Security Credit: 3\nCYB 269 - Digital Forensics Credit: 3\nCYB 285 - Cybersecurity Capstone Credit: 3\nIST 165 - Implementing and Administering Windows Directory Services Credit: 3\nIST 166 - Network Fundamentals Credit: 3\nIST 190 - Linux Essentials Credit: 3\nIST 191 - Linux System Administration Credit: 3\nIST 291 - Fundamentals of Network Security I Credit: 3\nIST 293 - IT and Data Assurance I Credit: 3\nIST 294 - IT and Data Assurance II Credit: 3"
+        },
+        "class_duration": {
+          "value": "30 Credits",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "30 Credit Hours"
+        },
+        "min_completion_time": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "program_flexibility": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "cost_per_class_short": {
+          "value": "$200 per credit hour",
+          "source_url": "https://www.tridenttech.edu/cost/tuition.html",
+          "source_quote": "Charleston/Berkeley/Dorchester County Residency\nHours: 1, Tuition*: $200"
+        },
+        "cost_per_class_long": {
+          "value": "$378.64 per credit hour",
+          "source_url": "https://www.tridenttech.edu/cost/tuition.html",
+          "source_quote": "Out of State Residency\nHours: 1, Tuition*: $378.64"
+        },
+        "total_cost": {
+          "value": "In-state: $6018.34, Out-of-state: $11377.54",
+          "source_url": "https://www.tridenttech.edu/cost/tuition.html",
+          "source_quote": "In-state (Charleston/Berkeley/Dorchester County Residency): 30 credit hours * $200/credit hour + (2 * $18.34 registration fee) = $6036.68. Out-of-state: 30 credit hours * $378.64/credit hour + (2 * $18.34 registration fee) = $11395.88"
+        },
+        "delivery_mode": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "in_person_requirement": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "enrollment_options": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "program_managed_by": {
+          "value": "Center for Cybersecurity",
+          "source_url": "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/index.html",
+          "source_quote": "Trident Technical College's Center for Cybersecurity provides students and the community with cybersecurity resources as well as academic and professional development opportunities."
+        },
+        "nsa_cae_cd_accredited": {
+          "value": "Yes, Trident Technical College has been designated as a National Center of Academic Excellence (CAE) in Cyber Defense Education (CDE).",
+          "source_url": "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/index.html",
+          "source_quote": "Trident Technical College has been designated as a National Center of Academic Excellence (CAE) in Cyber Defense Education (CDE). This designation was awarded by the National Security Agency (NSA) and Department of Homeland Security (DHS) upon meeting their stringent requirements for cybersecurity curriculum and program criteria."
+        },
+        "cert_prep": {
+          "value": "This program will help you prepare for CompTIA Linux+, Security +, EC-Council Certified Ethical Hacking and other certification exams.",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "This program will help you prepare for CompTIA Linux+, Security +, EC-Council Certified Ethical Hacking and other certification exams."
+        },
+        "stackable": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "stackable_details": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "num_fulltime_faculty": {
+          "value": "5",
+          "source_url": "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/faculty.html",
+          "source_quote": "Terry Richburg, Frank W. Gibbes, Chris Griffith, Curtis Morris, Luke Batchelor"
+        },
+        "faculty_details": {
+          "value": "Terry Richburg (Director, Network Systems Management and Cybersecurity), Frank W. Gibbes (Instructor), Chris Griffith (Netlab Administrator), Curtis Morris (Instructor), Luke Batchelor (Instructor)",
+          "source_url": "https://www.tridenttech.edu/programs/divisions/bt/center_for_cybersecurity/faculty.html",
+          "source_quote": "Terry Richburg\nDirector, Network Systems Management and Cybersecurity\n\nFrank W. Gibbes\nInstructor - National Center of Academic Excellence in Cyber Defense (CAE-CD) POC\n\nChris Griffith\nNetlab Administrator\n\nCurtis Morris\nInstructor\n\nLuke Batchelor\nInstructor"
+        },
+        "cert_graduation_requirements": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "program_curriculum": {
+          "value": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_url": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+          "source_quote": "Major Requirements\n\nCPT 282 - Information Systems Security Credit: 3\nCYB 269 - Digital Forensics Credit: 3\nCYB 285 - Cybersecurity Capstone Credit: 3\nIST 165 - Implementing and Administering Windows Directory Services Credit: 3\nIST 166 - Network Fundamentals Credit: 3\nIST 190 - Linux Essentials Credit: 3\nIST 191 - Linux System Administration Credit: 3\nIST 291 - Fundamentals of Network Security I Credit: 3\nIST 293 - IT and Data Assurance I Credit: 3\nIST 294 - IT and Data Assurance II Credit: 3"
+        },
+        "scholarships_available": {
+          "value": "Not Found",
+          "source_url": "Not Found",
+          "source_quote": "Not Found"
+        },
+        "finance_options": {
+          "value": "Students can apply for financial aid by completing the Free Application for Federal Student Aid (FAFSA) and submitting it to TTC's school code (004920).",
+          "source_url": "https://catalog.tridenttech.edu/content.php?catoid=6&navoid=399",
+          "source_quote": "Students can apply for financial aid by completing the Free Application for Federal Student Aid (FAFSA) and submitting it to TTC's school code (004920)."
+        }
+      },
+      "row": {
+        "Institution": "Trident Technical College",
+        "Program Name": "Cybersecurity Certificate (CAS.CYBE)",
+        "Admissions Contact": "Info: 843-574-6111",
+        "Program Type": "Undergraduate Certificate",
+        "Program Focus": "Information Assurance, Cybersecurity, Systems Security, Infrastructure Security, Digital Forensics, Network Security",
+        "Program Focus in Details": "This certificate program is designed for individuals with experience or training in systems and network operations. It is designed to provide expertise in information assurance and cybersecurity to prepare you for employment in the fast-growing field of cybersecurity. This program is ideal if you are employed or are pursuing employment in a business that includes a cybersecurity workforce as part of the organization. Students will gain the knowledge and skills to develop and implement systems and infrastructure security in business and industry.",
+        "Program Level": "Undergraduate Certificate",
+        "Credential Awarded": "Certificate in Applied Science",
+        "Prerequisites": "Admission into this program requires proof of high school graduation (or GED) and qualifying scores on SAT, ACT or the TTC placement test.",
+        "# Courses": "10",
+        "Courses": "CPT 282 - Information Systems Security, CYB 269 - Digital Forensics, CYB 285 - Cybersecurity Capstone, IST 165 - Implementing and Administering Windows Directory Services, IST 166 - Network Fundamentals, IST 190 - Linux Essentials, IST 191 - Linux System Administration, IST 291 - Fundamentals of Network Security I, IST 293 - IT and Data Assurance I, IST 294 - IT and Data Assurance II",
+        "Notable Courses": "Required Courses:\nCPT 282 - Information Systems Security\nCYB 269 - Digital Forensics\nCYB 285 - Cybersecurity Capstone\nIST 165 - Implementing and Administering Windows Directory Services\nIST 166 - Network Fundamentals\nIST 190 - Linux Essentials\nIST 191 - Linux System Administration\nIST 291 - Fundamentals of Network Security I\nIST 293 - IT and Data Assurance I\nIST 294 - IT and Data Assurance II",
+        "Class Duration": "30 Credits",
+        "Min Completion Time": "Not Found",
+        "Program Flexibility": "Not Found",
+        "Cost Per Class Short": "$200 per credit hour",
+        "Cost Per Class Long": "$378.64 per credit hour",
+        "Total Cost": "In-state: $6018.34, Out-of-state: $11377.54",
+        "Delivery Mode": "Not Found",
+        "In-Person Requirement (Yes or No)": "Not Found",
+        "Enrollment Options": "Not Found",
+        "Program Managed By": "Center for Cybersecurity",
+        "NSA CAE-CD Accredited?": "Yes, Trident Technical College has been designated as a National Center of Academic Excellence (CAE) in Cyber Defense Education (CDE).",
+        "Cert Prep": "This program will help you prepare for CompTIA Linux+, Security +, EC-Council Certified Ethical Hacking and other certification exams.",
+        "Stackable": "Not Found",
+        "Stackable Details": "Not Found",
+        "# of Full-time Faculty": "5",
+        "Faculty Details": "Terry Richburg (Director, Network Systems Management and Cybersecurity), Frank W. Gibbes (Instructor), Chris Griffith (Netlab Administrator), Curtis Morris (Instructor), Luke Batchelor (Instructor)",
+        "Certificate Graduation Requirements": "Not Found",
+        "Program Curriculum": "https://catalog.tridenttech.edu/preview_program.php?catoid=2&poid=398",
+        "Scholarships Available": "Not Found",
+        "Finance Options": "Students can apply for financial aid by completing the Free Application for Federal Student Aid (FAFSA) and submitting it to TTC's school code (004920)."
+      },
+      "csv_paths": {
+        "discovery_csv": "/home/traderx/Downloads/Answesha/University_Aggregator/backend/app/outputs/trident_technical_college/trident_technical_college_discovery.csv",
+        "full_csv": "/home/traderx/Downloads/Answesha/University_Aggregator/backend/app/outputs/trident_technical_college/trident_technical_college_cybersecurity_full.csv"
+      }
+    },
+    "error": null
+  }
