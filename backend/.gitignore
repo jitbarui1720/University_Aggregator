@@ -1,0 +1,11 @@
+#Environment Variables
+.env
+
+#Outputs
+outputs/
+
+#Cache
+__pycache__/
+
+#Virtual Environment
+venv/
